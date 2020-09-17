@@ -2,11 +2,12 @@
 <html>
 <head>
 	<title>Uber Eats</title>
+	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
 </head>
 <body>
-<header id="beginning">
+<header class="header bg-white" id="beginning">
 	<div class="container">
 		<div class="row between-xs">
 			<div class="col-md-2 col-xs-5">
@@ -16,7 +17,7 @@
 			</div>
 			<div class="col-lg-2 col-md-3 col-xs-6">
 				<div class="row end-xs">
-					<button class="sign_in outlineless button">Войти</button>
+					<button class="sign_in fs-13 bg-white outlineless button">Войти</button>
 					<a href="#" class="basket scale">
 						<img  src="stores/basket.svg" alt="">	
 					</a>
@@ -38,18 +39,18 @@
 <div class="container">
 	<div class="row">
 		<div class="col-xs-12">
-			<h3 class="caption">Рестораны в москве</h3>
+			<h3 class="h3">Рестораны в москве</h3>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-xs-12 col-md-6 col-lg-4">
 			<a class="link" href="pushkin.html">
-				<figure class="restaurant button">
+				<figure class="restaurant p-5 button">
 					<img src="stores/photo(1).png" alt="">
 					<figcaption class="figcaption">
-						<p class="name">Макдоналдс - газетный</p>
-						<p class="kitchen">&#8381&#8381 &#8226 Бургеры</p>
-						<p class="time">25 - 35 мин</p>
+						<p class="fs-16">Макдоналдс - газетный</p>
+						<p class="kitchen fs-14">&#8381&#8381 &#8226 Бургеры</p>
+						<p class="fs-13">25 - 35 мин</p>
 					</figcaption>
 				</figure>
 			</a>
@@ -59,9 +60,9 @@
 				<figure class="restaurant button">
 					<img src="stores/photo(2).png" alt="">
 					<figcaption class="figcaption">
-						<p class="name">DimSum & Co — ЦДМ</p>
-						<p class="kitchen">&#8381 &#8226 Японская &#8226 Китайская &#8226 Азиатская</p>
-						<p class="time">40 - 50 мин</p>
+						<p class="fs-16">DimSum & Co — ЦДМ</p>
+						<p class="kitchen fs-14">&#8381 &#8226 Японская &#8226 Китайская &#8226 Азиатская</p>
+						<p class="fs-13">40 - 50 мин</p>
 					</figcaption>
 				</figure>
 			</a>
@@ -71,9 +72,9 @@
 				<figure class="restaurant button">
 					<img src="stores/photo(3).png" alt="">
 					<figcaption class="figcaption">
-						<p class="name">ДвижОК — Манежная</p>
-						<p class="kitchen">&#8381 &#8226 Американская &#8226 Европейская</p>
-						<p class="time">35 - 45 мин</p>
+						<p class="fs-16">ДвижОК — Манежная</p>
+						<p class="kitchen fs-14">&#8381 &#8226 Американская &#8226 Европейская</p>
+						<p class="fs-13">35 - 45 мин</p>
 					</figcaption>
 				</figure>
 			</a>
@@ -84,9 +85,9 @@
 				<figure class="restaurant button">
 					<img src="stores/photo(4).png" alt="">
 					<figcaption class="figcaption">
-						<p class="name">НЯ — NHA</p>
-						<p class="kitchen">₽₽ • Вьетнамская</p>
-						<p class="time">30 - 40 мин</p>
+						<p class="fs-16">НЯ — NHA</p>
+						<p class="kitchen fs-14">₽₽ • Вьетнамская</p>
+						<p class="fs-13">30 - 40 мин</p>
 					</figcaption>
 				</figure>
 			</a>
@@ -97,9 +98,9 @@
 				<figure class="restaurant button">
 					<img src="stores/photo(5).png" alt="">
 					<figcaption class="figcaption">
-						<p class="name">Точка Дзы — Цветной</p>
-						<p class="kitchen">&#8381&#8381 &#8226 Вьетнамская</p>
-						<p class="time">40 - 50 мин</p>
+						<p class="fs-16">Точка Дзы — Цветной</p>
+						<p class="kitchen fs-14">&#8381&#8381 &#8226 Вьетнамская</p>
+						<p class="fs-13">40 - 50 мин</p>
 					</figcaption>
 				</figure>
 			</a>
@@ -110,9 +111,9 @@
 				<figure class="restaurant button">
 					<img src="stores/photo(6).png" alt="">
 					<figcaption class="figcaption">
-						<p class="name">Cinnabon</p>
-						<p class="kitchen">&#8381 &#8226 Выпечка &#8226 Десерты &#8226 Капкейки</p>
-						<p class="time">25 - 35 мин</p>
+						<p class="fs-16">Cinnabon</p>
+						<p class="kitchen fs-14">&#8381 &#8226 Выпечка &#8226 Десерты &#8226 Капкейки</p>
+						<p class="fs-13">25 - 35 мин</p>
 					</figcaption>
 				</figure>
 			</a>
@@ -123,9 +124,9 @@
 				<figure class="restaurant button">
 				<img src="stores/photo(7).png" alt="">
 					<figcaption class="figcaption">
-						<p class="name">PIZZELOVE</p>
-						<p class="kitchen">&#8381&#8381 &#8226 Пицца</p>
-						<p class="time">15 - 25 мин</p>
+						<p class="fs-16">PIZZELOVE</p>
+						<p class="kitchen fs-14">&#8381&#8381 &#8226 Пицца</p>
+						<p class="fs-13">15 - 25 мин</p>
 					</figcaption>
 				</figure>
 			</a>
@@ -136,9 +137,9 @@
 				<figure class="restaurant button">
 				<img src="stores/photo(8).png" alt="">
 					<figcaption class="figcaption">
-						<p class="name">Zю кафе — Тверская</p>
-						<p class="kitchen">&#8381&#8381 &#8226 Японская</p>
-						<p class="time">25 - 35 мин</p>
+						<p class="fs-16">Zю кафе — Тверская</p>
+						<p class="kitchen fs-14">&#8381&#8381 &#8226 Японская</p>
+						<p class="fs-13">25 - 35 мин</p>
 					</figcaption>
 				</figure>
 			</a>
@@ -149,9 +150,9 @@
 				<figure class="restaurant button">
 					<img src="stores/photo(9).png" alt="">
 					<figcaption class="figcaption">
-						<p class="name">Bar BQ Cafe — Манежная</p>
-						<p class="kitchen">&#8381&#8381&#8381 &#8226 Европейская</p>
-						<p class="time">30 - 40 мин</p>
+						<p class="fs-16">Bar BQ Cafe — Манежная</p>
+						<p class="kitchen fs-14">&#8381&#8381&#8381 &#8226 Европейская</p>
+						<p class="fs-13">30 - 40 мин</p>
 					</figcaption>
 				</figure>
 			</a>
@@ -160,7 +161,7 @@
 	</div>
 </div>
 </div>
-<footer class="footer">
+<footer class="footer c-white">
 	<div class="container">
 		<div class="footer_1 grey_border">
 			<div class="row">
@@ -173,13 +174,13 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="footer_2 grey_border">
+		<div class="footer_2 fs-13 grey_border">
 			<div class="row">
 				<div class="col-xs-12 col-md-4">
 					<div class="footer_links_1">
 						<p class="l1">
 							<img class="world" src="stores/world.svg" alt="">
-							<select class="l2 outlineless">
+							<select class="l2 c-white fs-16 outlineless">
 								<option value="s1" selected>Русский</option>
 								<option value="s2">English</option>
 								<option value="s3">Français</option>
@@ -196,17 +197,17 @@
 				</div>
 				<div class="col-xs-12 col-md-4">
 					<div class="p-5">
-						<p class="p-5"><a class="link white underline" href="#">Об UberEats</a></p>
-						<p class="p-5"><a class="link white underline" href="#">Станьте партнёром по доставке</a></p>
-						<p class="p-5"><a class="link white underline" href="#">Станьте парнёром-рестораном</a></p>
+						<p class="p-5"><a class="link c-white underline" href="#">Об UberEats</a></p>
+						<p class="p-5"><a class="link c-white underline" href="#">Станьте партнёром по доставке</a></p>
+						<p class="p-5"><a class="link c-white underline" href="#">Станьте парнёром-рестораном</a></p>
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-4">
 					<div class="p-5">
-						<p class="p-5"><a class="link white underline" href="#">Все города</a></p>
-						<p class="p-5"><a class="link white underline" href="#">Цены</a></p>
-						<p class="p-5"><a class="link white underline" href="#">Помощь</a></p>
-						<p class="p-5"><a class="link white underline" href="#">FAQs</a></p>
+						<p class="p-5"><a class="link c-white underline" href="#">Все города</a></p>
+						<p class="p-5"><a class="link c-white underline" href="#">Цены</a></p>
+						<p class="p-5"><a class="link c-white underline" href="#">Помощь</a></p>
+						<p class="p-5"><a class="link c-white underline" href="#">FAQs</a></p>
 					</div>
 				</div>
 			</div>
@@ -232,13 +233,13 @@
 		<div class="footer_4">
 			<div class="row">
 				<div class="col-xs-12 col-md-4 col-lg-4">
-					<div><a class="link white underline" href="https://vk.com/feed" target="_blank">&#169 Made by ilyabasicboy</a></div>
+					<div><a class="link c-white underline" href="https://vk.com/feed" target="_blank">&#169 Made by ilyabasicboy</a></div>
 				</div>
 				<div class="col-xs-12 col-md-4 col-lg-4">
-					<div><a class="link white underline" href="">Обработка персональных данных</a></div>
+					<div><a class="link c-white underline" href="">Обработка персональных данных</a></div>
 				</div>
 				<div class="col-xs-12 col-md-4 col-lg-4">
-					<div><a class="link white underline" href="">Пользовательское соглашение</a></div>
+					<div><a class="link c-white underline" href="">Пользовательское соглашение</a></div>
 				</div>
 			</div>
 		</div>
