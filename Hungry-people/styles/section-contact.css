@@ -35,13 +35,13 @@
     margin-right: 0;
 }
 
+.section-contact__textarea {
+    resize: none;
+}
+
 .section-contact__submit {
     flex-grow: 1;
     width: 49%;
-}
-
-.section-contact__textarea {
-    resize: none;
 }
 
 .section-contact__contacts {

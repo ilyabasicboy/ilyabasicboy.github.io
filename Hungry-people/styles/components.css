@@ -192,7 +192,7 @@
             border-radius: 5px;
         }
         
-        .img__right:after,
+        .img__right:before,
         .img__left:before {
             display: block;
             content: '';
@@ -204,7 +204,7 @@
             border-radius: 5px;
         }
         
-        .img__right:after {
+        .img__right:before {
             top: 24%;
             right: -73%;
         }
@@ -300,11 +300,11 @@
         }
         
         .footer {
-            background: none;
             min-height: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
+            text-align: center;
         }
         
         .footer__text {
