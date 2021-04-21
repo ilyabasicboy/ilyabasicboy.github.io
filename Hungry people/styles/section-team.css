@@ -1,0 +1,39 @@
+.section-team {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/section-team/section-team-bg.png), #000 no-repeat;
+    background-size: cover;
+    min-height: 675px;
+    padding: 0 10px 100px 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-team__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-team__img {
+    background: url(../images/section-team/Rectangle.png);
+    background-size: cover;
+}
+
+.section-team__info {
+    margin-left: 15px;
+}
+
+.section-team__p1 {
+    margin: 20px 0 0 0;
+}
+
+.section-team__p2 {
+    padding: 0;
+    margin: 25px 0 0 0;
+}
+
+@media (max-width:767px) {
+    .section-team__main {
+        flex-direction: column;
+    }
+}

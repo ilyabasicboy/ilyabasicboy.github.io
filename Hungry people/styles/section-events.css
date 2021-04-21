@@ -1,0 +1,41 @@
+.section-events {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/section-events/events-bg.png), #000 no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px
+}
+
+.section-events__main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-events__picture1 {
+    margin-right: 15px;
+}
+
+.section-events__img1 {
+    background: url(../images/section-events/events-Rectangle-left.png);
+    background-size: cover;
+}
+
+.section-events__img2 {
+    background: url(../images/section-events/events-Reactangle-right.png);
+    background-size: cover;
+}
+
+.section-events__footer {
+    color: rgba(255, 255, 255, 0.445);
+}
+
+@media (max-width:767px) {
+    .section-events__main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-events__picture2 {
+        margin-top: 20px;
+    }
+}

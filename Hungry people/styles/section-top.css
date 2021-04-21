@@ -1,0 +1,108 @@
+    .section-top {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/section-top/header-bg.png), #000 no-repeat;
+        background-size: cover;
+        min-height: 800px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 0 80px 0;
+    }
+    
+    .section-top__main {
+        margin-top: 151px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .section-top__title {
+        margin-top: 15px;
+    }
+    
+    .section-top__buttons {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .section-top__buttons .btn:not(:last-child) {
+        margin-right: 40px;
+    }
+    
+    .section-top__schedule {
+        width: 60px;
+    }
+    
+    .section-top__socials {
+        max-width: 60px;
+    }
+    
+    .socials__ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .socials__li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    
+    .socials__a {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        padding: 20px;
+        display: block;
+        transition: background ease 0.3s;
+    }
+    
+    .socials__a:hover {
+        background: rgba(122, 122, 122, 0.4);
+    }
+    
+    .section-top__scrollBtn {
+        margin-top: 80px;
+    }
+    
+    .scrollBtn {
+        background: none;
+        border: none;
+        padding: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: ease all .3s;
+    }
+    
+    .scrollBtn:hover {
+        background: rgba(122, 122, 122, 0.4);
+    }
+    
+    .scrollBtn__span {
+        background: #fff;
+        border-radius: 50%;
+        padding: 20px;
+        display: block;
+    }
+    
+    @media (max-width:767px) {
+        .section-top__buttons .btn:not(:last-child) {
+            margin-right: 0
+        }
+        .section-top__buttons {
+            flex-direction: column;
+            align-items: center;
+        }
+        .section-top__buttons>.btn:not(:first-child) {
+            margin-top: 10px;
+        }
+        .section-top__logo {
+            transform: scale(.8)
+        }
+    }
+    
+    @media (max-width:480px) {
+        .socials__a {
+            padding: 10px;
+        }
+    }

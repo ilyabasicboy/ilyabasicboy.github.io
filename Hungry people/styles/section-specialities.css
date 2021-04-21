@@ -1,0 +1,47 @@
+.section-specialities {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/section-specialities/specialty-bg.png), #000 no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.section-specialities__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-specialities__info {
+    margin-left: 15px;
+}
+
+.section-specialities__p1 {
+    margin: 20px 0 0 0;
+}
+
+.section-specialities__p2 {
+    margin: 25px 0 0 0;
+}
+
+.section-specialities__img {
+    background: url(../images/section-specialities/Rectangle.png);
+    background-size: cover;
+}
+
+.section-specialities__slider {
+    display: flex;
+    justify-content: center;
+    min-height: 100px;
+    align-items: center;
+}
+
+@media (max-width:767px) {
+    .section-specialities__main {
+        flex-direction: column;
+    }
+    .section-booking__info {
+        margin-right: 15px;
+    }
+}
