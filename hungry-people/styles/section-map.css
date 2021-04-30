@@ -1,0 +1,10 @@
+.section-map {
+    background: rgb(240, 232, 166);
+}
+
+.section-map__content {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 475px;
+}
