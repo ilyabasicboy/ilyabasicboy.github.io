@@ -2,7 +2,6 @@
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/section-top/header-bg.png), #000 no-repeat;
         background-size: cover;
         min-height: 800px;
-        font-weight: 700;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -11,7 +10,6 @@
     
     .section-top__main {
         margin-top: 151px;
-        text-transform: uppercase;
         display: flex;
         justify-content: space-between;
     }
@@ -51,9 +49,12 @@
     .socials__a {
         border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 50%;
-        padding: 20px;
-        display: block;
+        width: 60px;
+        height: 60px;
         transition: background ease 0.3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .socials__a:hover {
@@ -64,26 +65,7 @@
         margin-top: 80px;
     }
     
-    .scrollBtn {
-        background: none;
-        border: none;
-        padding: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 50%;
-        cursor: pointer;
-        transition: ease all .3s;
-    }
     
-    .scrollBtn:hover {
-        background: rgba(122, 122, 122, 0.4);
-    }
-    
-    .scrollBtn__span {
-        background: #fff;
-        border-radius: 50%;
-        padding: 20px;
-        display: block;
-    }
     
     @media (max-width:767px) {
         .section-top__buttons .btn:not(:last-child) {
