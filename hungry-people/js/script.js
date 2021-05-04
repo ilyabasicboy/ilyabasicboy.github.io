@@ -5,7 +5,7 @@ window.addEventListener('scroll', showBtn);
 function showBtn() {
     if (pageYOffset>document.documentElement.clientHeight){
         btnScrollTop.style.cssText='visibility:visible; opacity:';
-        btnScrollTop.style.top=headerPage.clientHeight+20+'px';
+        btnScrollTop.style.top='100px';
     }
     else {
     btnScrollTop.style.cssText='visibility:hidden; opacity: 0; top:-10%;';
