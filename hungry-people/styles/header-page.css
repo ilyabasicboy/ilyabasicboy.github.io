@@ -8,8 +8,8 @@
     z-index: 2;
     width: 100%;
     transition: all ease .3s;
+    min-height: 100px;
 }
-
 .header-page__nav {
     display: flex;
     justify-content: space-between;
@@ -53,6 +53,8 @@
 
 .header-page__hamburger {
     display: none;
+    padding: 0 10px;
+    transition: all ease .3s;
 }
 
 .header-page__hamburger .btn-menu__inner:before,
@@ -75,19 +77,15 @@
     .header-page__hamburger {
         display: block;
     }
+    .header-page {
+        align-items: flex-start;
+        background: rgba(0, 0, 0, 0.5);
+        min-height: 50px;
+    }
 }
 
 @media (max-width:767px) {
-    .header-page {
-        min-height: 50px;
-    }
-    .header-page__hamburger {
-        transform: scale(0.8);
-    }
 }
 
 @media (max-width:480px) {
-    .header-page__hamburger {
-        transform: scale(0.6);
-    }
 }

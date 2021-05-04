@@ -31,14 +31,58 @@
     <!--header-page-->
     <header class="header-page header">
         <div class="header-page__container container">
-            <nav class="header-page__nav">
-                <div class="header-page__hamburger">
-                    <button class="btn-menu" type="button">
-                      <span class="btn-menu__box">
-                        <span class="btn-menu__inner"></span>
-                      </span>
-                    </button>
+            <div class="header-page__hamburger">
+                <button class="btn-menu" type="button">
+                  <span class="btn-menu__box">
+                    <span class="btn-menu__inner"></span>
+                  </span>
+                </button>
+                <div class="hamburger__menu hidden">
+                    <ul class="hamburger__ul">
+                        <li class="hamburger__li">
+                            <a href="" class="hamburger__a" data-type="section-top">
+                                <span class="hamburger__text">home</span>
+                            </a>
+                        </li>
+                        <li class="hamburger__li">
+                            <a href="" class="hamburger__a" data-type="section-about">
+                            <span class="hamburger__text">about</span>
+                            </a>
+                        </li>
+                        <li class="hamburger__li">
+                            <a href="" class="hamburger__a" data-type="section-team">
+                                <span class="hamburger__text">team</span>
+                            </a>
+                        </li>
+                        <li class="hamburger__li">
+                            <a href="" class="hamburger__a" data-type="section-booking">
+                                <span class="hamburger__text">booking</span>
+                            </a>
+                        </li>
+                        <li class="hamburger__li">
+                            <a href="" class="hamburger__a" data-type="section-menu">
+                                <span class="hamburger__text">menu</span>
+                            </a>
+                        </li>
+                        <li class="hamburger__li">
+                            <a href="" class="hamburger__a" data-type="section-photo">
+                                <span class="hamburger__text">galerie</span>
+                            </a>
+                        </li>
+                        <li class="hamburger__li">
+                            <a href="" class="hamburger__a" data-type="section-events">
+                                <span class="hamburger__text">events</span>
+                            </a>
+                        </li>
+                        <li class="hamburger__li">
+                            <a href="" class="hamburger__a" data-type="section-contact">
+                                <span class="hamburger__text">contact</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+            </div>
+            <nav class="header-page__nav">
                 <div class="header-page__start">
                     <ul class="header-page__ul">
                         <li class="header-page__li">
@@ -71,7 +115,7 @@
                             </a>
                         </li>
                         <li class="header-page__li">
-                            <a href="#" class="header-page__a" data-type="section-specialities">
+                            <a href="#" class="header-page__a" data-type="section-photo">
                                 <span class="header-page__text">galerie</span>
                             </a>
                         </li>
@@ -200,13 +244,13 @@
                     <h2 class="section-booking__title title">book a table</h2>
                     <form action="" class="section-booking__form">
                         <p class="name section-booking__input">
-                            <input type="text" placeholder="Name" class="input">
+                            <input type="text" placeholder="Name" class="input" required>
                         </p>
                         <p class="email section-booking__input">
-                            <input type="email" placeholder="Email" class="input">
+                            <input type="email" placeholder="Email" class="input" required>
                         </p>
                         <p class="phone section-booking__input">
-                            <input type="tel" placeholder="Phone" class="input">
+                            <input type="tel" placeholder="Phone" class="input" required>
                         </p>
                         <p class='people section-booking__input'>
                             <input type="text" class="input" placeholder="People">
@@ -585,6 +629,8 @@
     <!--/scrollTopBtn-->
     
     <script src="js/script.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/header.js"></script>
 </body>
 
 </html>

@@ -166,6 +166,7 @@
             cursor: pointer;
             display: inline-block;
             padding: 15px;
+            align-self: start;
         }
         
         .btn-menu__box {
@@ -180,6 +181,17 @@
             width: 100%;
             height: 4px;
             border-radius: 5px;
+            transition: .3s;
+        }
+        .opened .btn-menu__inner:before{
+            top: 0;
+            transform: rotate(90deg);
+        }
+        .opened .btn-menu__inner:after {
+            bottom: 0;
+        }
+        .opened .btn-menu__inner {
+            transform: rotate(-45deg);
         }
         
         .btn-menu__inner {
@@ -201,6 +213,30 @@
         
         .btn-menu__inner:after {
             bottom: -10px;
+        }
+        .hidden {
+            display: none;
+        }
+
+        .hamburger__ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .hamburger__li {
+            margin-bottom: 5px;
+        }
+        .hamburger__a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            transition: background .3s;
+        }
+        .hamburger__a:hover {
+            background: rgba(255, 255, 255, 0.9);
+            color: #000;
         }
         /*/hamburger*/
         /*text*/
