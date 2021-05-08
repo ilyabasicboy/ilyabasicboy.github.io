@@ -60,7 +60,7 @@
                             </a>
                         </li>
                         <li class="hamburger__li">
-                            <a href="" class="hamburger__a" data-type="section-menu">
+                            <a href="" class="hamburger__a" data-type="section-specialities">
                                 <span class="hamburger__text">menu</span>
                             </a>
                         </li>
@@ -110,7 +110,7 @@
                 <div class="header-page__end">
                     <ul class="header-page__ul">
                         <li class="header-page__li">
-                            <a href="#" class="header-page__a" data-type="section-menu">
+                            <a href="#" class="header-page__a" data-type="section-specialities">
                                 <span class="header-page__text">menu</span>
                             </a>
                         </li>
@@ -146,7 +146,9 @@
                     
             </div>
             <div class="section-top__main">
-                <div class="section-top__schedule"><img src="images/section-top/schedule.png" alt=""></div>
+                <div class="section-top__schedule">
+                    <div class="schedule-text">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</div>
+                </div>
                 <div class="section-top__info">
                     <div class="section-top__subtitle subtitle">restaurant</div>
                     <h1 class="section-top__title title__main">hungry people</h1>
@@ -182,7 +184,7 @@
                 </div>
             </div>
             <div class='section-top__scrollBtn'>
-                <button class="btn-scroll__about" id="scrollBtn">
+                <button class="btn-scroll__about">
                     <span class="btn-scroll__span">
                         <i class="btn-scroll__arrow fas fa-angle-down"></i>
                     </span>
@@ -208,6 +210,7 @@
                 </div>
                 <div class="section-about__picture picture__right">
                     <div class="section-about__img img__right"></div>
+                    <div class="square-yellow"></div>
                 </div>
             </div>
         </div>
@@ -284,20 +287,53 @@
                 <div class="section-specialities__subtitle subtitle">specialities</div>
             </header>
             <div class="section-specialities__main">
-                <div class="section-specialities__picture picture__left">
-                    <div class="section-specialities__img img__left"></div>
-                </div>
-                <div class="section-specialities__info content">
-                    <h2 class="section-specialities__title title">master chef</h2>
-                    <p class="section-specialities__p1 text__bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
-                    <p class="section-specialities__p2 text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
-                        pharetra. Nulla facilisis semper laoreet.</p>
+                <div class="section-specialities__slider">
+                    <div class="slider-box">
+                        <div class="slider-block">
+                            <div class="section-specialities__picture picture__left">
+                                <div class="section-specialities__img img__left"></div>
+                            </div>
+                            <div class="section-specialities__info content">
+                                <h2 class="section-specialities__title title">master chef</h2>
+                                <p class="section-specialities__p1 text__bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                                <p class="section-specialities__p2 text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+                                pharetra. Nulla facilisis semper laoreet.</p>
+                            </div>
+                        </div>
+                        <div class="slider-block">
+                            <div class="section-specialities__picture picture__left">
+                                <div class="section-specialities__img img__left"></div>
+                            </div>
+                            <div class="section-specialities__info content">
+                                <h2 class="section-specialities__title title">master chef</h2>
+                                <p class="section-specialities__p1 text__bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                                <p class="section-specialities__p2 text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+                                pharetra. Nulla facilisis semper laoreet.</p>
+                            </div>
+                        </div>
+                        <div class="slider-block">
+                            <div class="section-specialities__picture picture__left">
+                                <div class="section-specialities__img img__left"></div>
+                            </div>
+                            <div class="section-specialities__info content">
+                                <h2 class="section-specialities__title title">master chef</h2>
+                                <p class="section-specialities__p1 text__bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                                <p class="section-specialities__p2 text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+                                pharetra. Nulla facilisis semper laoreet.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="section-specialities__slider">
-                <button class="slider__btn"></button>
-                <button class="slider__btn"></button>
-                <button class="slider__btn"></button>
+            <footer class="section-specialities__footer footer">
+                <div class="section-specialities__navigation slider__buttons">
+                </div>
+            </footer>
+            <div class="slider-btn__left">
+                <i class="fas fa-angle-left"></i>
+            </div>
+            <div class="slider-btn__right">
+                <i class="fas fa-angle-right"></i>
             </div>
         </div>
     </section>
@@ -512,10 +548,21 @@
             <div class="section-events__main">
                 <div class="section-events__picture1 picture__left">
                     <div class="section-events__img1 img__left">
+                        <div class="img-box__left">
+                            <div class="img-block__left">
+                                <div class="img-text__left">weddings</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="section-events__picture2 picture__right">
-                    <div class="section-events__img2 img__right"></div>
+                    <div class="section-events__img2 img__right">
+                        <div class="img-box__right">
+                            <div class="img-block__right">
+                                <div class="img-text__right">corporate parties</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="section-events__footer footer">
@@ -631,6 +678,8 @@
     <script src="js/script.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/btns.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 
 </html>

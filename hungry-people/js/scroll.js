@@ -14,13 +14,5 @@ function scrollWindow(target) {
             clearInterval(scrollFunc);
         }
         window.addEventListener('wheel',()=>{checkInterval=false; clearInterval(scrollFunc);})
-    }, 10);
+    }, 5);
 }
-
-//btn-scroll__about
-let btnScrollAbout=document.querySelector('.btn-scroll__about');
-let sectionAbout=document.querySelector('.section-about');
-btnScrollAbout.addEventListener('click',()=>scrollWindow(sectionAbout));
-
-//btn-scroll__top
-btnScrollTop.addEventListener('click', ()=>scrollWindow(document.body));

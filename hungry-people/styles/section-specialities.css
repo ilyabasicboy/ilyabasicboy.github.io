@@ -6,12 +6,14 @@
     text-align: center;
     padding: 0 10px;
 }
-
-.section-specialities__main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.section-specialities__container {
+    position: relative;
 }
+.section-specialities__slider {
+    transition: all .3s;
+    overflow: hidden;
+}
+
 
 .section-specialities__info {
     margin-left: 15px;
@@ -30,7 +32,7 @@
     background-size: cover;
 }
 
-.section-specialities__slider {
+.section-specialities__navigation {
     display: flex;
     justify-content: center;
     min-height: 100px;
@@ -38,10 +40,10 @@
 }
 
 @media (max-width:767px) {
-    .section-specialities__main {
+    .slider-block {
         flex-direction: column;
     }
-    .section-booking__info {
+    .section-specialities__info {
         margin-right: 15px;
     }
 }

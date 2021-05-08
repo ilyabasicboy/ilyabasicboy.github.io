@@ -19,11 +19,13 @@
 .section-events__img1 {
     background: url(../images/section-events/events-Rectangle-left.png);
     background-size: cover;
+    position: relative;
 }
 
 .section-events__img2 {
     background: url(../images/section-events/events-Reactangle-right.png);
     background-size: cover;
+    position: relative;
 }
 
 .section-events__footer {

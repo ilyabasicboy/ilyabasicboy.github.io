@@ -2,10 +2,19 @@ let headerPage=document.querySelector('.header-page');
 //header background
 window.addEventListener('scroll', setBackground);
 function setBackground() {
+    let links=document.querySelectorAll('.header-page__a');
     if (window.matchMedia('(max-width:992px)').matches) return;
-    if (pageYOffset<=10) headerPage.style.cssText='background:none; min-height:100px';
+    if (pageYOffset<=10) {
+        headerPage.style.cssText='background:none; min-height:100px';
+        for (a of links) {
+            a.style.padding='35px';
+        }
+    }
     else {
         headerPage.style.cssText='background:rgba(0, 0, 0, 0.5); min-height:50px';
+        for (a of links) {
+            a.style.padding='20px 35px';
+        }
     }
 }
 

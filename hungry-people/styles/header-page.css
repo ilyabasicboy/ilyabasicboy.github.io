@@ -16,13 +16,6 @@
     align-items: center;
 }
 
-.header-page__start {
-    margin-right: 100px;
-}
-
-.header-page__end {
-    margin-left: 100px;
-}
 
 .header-page__ul {
     list-style: none;
@@ -43,7 +36,7 @@
     color: #fff;
     padding: 35px;
     display: block;
-    transition: background .3s;
+    transition: background .3s, padding .3s;
 }
 
 .header-page__a:hover {
