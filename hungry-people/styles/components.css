@@ -216,6 +216,9 @@
         .hidden {
             display: none;
         }
+        .hamburger__menu {
+            transition: all ease .3s;
+        }
 
         .hamburger__ul {
             list-style: none;
@@ -227,11 +230,13 @@
         }
         .hamburger__a {
             text-decoration: none;
-            color: #fff;
+            color: inherit;
             padding: 10px;
-            display: flex;
-            justify-content: center;
+            display: block;
+            text-align: center;
             transition: background .3s;
+            width: 50%;
+            margin: auto;
         }
         .hamburger__a:hover {
             background: rgba(255, 255, 255, 0.9);
@@ -416,9 +421,9 @@
                 border: 10px solid #E8C300;
             }
             .img-text__left,
-        .img-text__right {
-            font-size: 14px;
-        }
+            .img-text__right {
+                font-size: 14px;
+            }
         }
         /*/images*/
         /*content*/
@@ -480,8 +485,11 @@
         .select {
             background: none;
             border: none;
-            padding: 0;
-            margin: 0;
+            color: #000;
+            width: 100%;
+        }
+        .select:focus {
+            outline: none;
         }
         
         .submit {
@@ -577,10 +585,11 @@
         /*menu*/
         
         .menu__block {
+            margin: auto;
             margin-top: 30px;
-            margin-right: 15px;
             text-align: left;
             max-width: 363px;
+            
         }
         
         .menu__string {
@@ -615,13 +624,17 @@
             color: rgba(51, 51, 51, .5);
             margin: 0;
         }
+        .active {
+            border-bottom: solid 5px rgb(99, 99, 99);
+            border-radius: 5px;
+        }
         
         @media (max-width:1200px) {
             .menu__string {
-                font-size: 12px;
+                font-size: 14px;
             }
             .menu__substring {
-                font-size: 8px;
+                font-size: 10px;
             }
             .menu__block {
                 max-width: 300px;
@@ -629,7 +642,6 @@
         }
         @media (max-width:992px) {
             .menu__block {
-                max-width: 270px;
             }
         }
         /*/menu*/
@@ -639,4 +651,15 @@
             text-decoration: none;
         }
 
-        
+        /*fadeIn-fadeOut*/
+        .fadeIn {
+            animation: fadeIn .5s linear forwards;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }

@@ -30,12 +30,3 @@ headerPage.addEventListener('click',function(event) {
     let target=document.querySelector('.'+link.dataset.type);
     scrollWindow(target);   
 })
-
-
-//hamburger
-let btnMenu=document.querySelector('.btn-menu');
-btnMenu.addEventListener('click', function(event) {
-    let menu=document.querySelector('.hamburger__menu');
-    menu.classList.toggle('hidden');
-    btnMenu.classList.toggle('opened');
-});

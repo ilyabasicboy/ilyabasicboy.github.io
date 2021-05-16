@@ -255,14 +255,33 @@
                         <p class="phone section-booking__input">
                             <input type="tel" placeholder="Phone" class="input" required>
                         </p>
-                        <p class='people section-booking__input'>
-                            <input type="text" class="input" placeholder="People">
+                        <p class='people section-booking__input input'>
+                            <select name="people" id="" class="select">
+                                <option value="" selected>People</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                            </select>
                         </p>
                         <p class="date section-booking__input">
                             <input type="text" placeholder="Date(mm/dd)" class="input">
                         </p>
-                        <p class="time section-booking__input">
-                            <input type="text" class="input" placeholder="Time">
+                        <p class="time section-booking__input input">
+                            <select name="Time" id="" class="select">
+                                <option value="" selected>Time</option>
+                                <option value="">8PM</option>
+                                <option value="">9PM</option>
+                                <option value="">10PM</option>
+                                <option value="">11PM</option>
+                                <option value="">12PM</option>
+                                <option value="">1AM</option>
+                                <option value="">2AM</option>
+                            </select>
                         </p>
                         <p class="submit section-booking__submit">
                             <input type="submit" class='submit' value="book now">
@@ -355,34 +374,73 @@
                                 <span class="btn-menu__inner"></span>
                               </span>
                             </button>
+                            <div class="hamburger__menu hidden">
+                                <ul class="hamburger__ul">
+                                    <li class="hamburger__li">
+                                        <a href="" class="hamburger__a" data-type="soupe">
+                                            <span class="hamburger__text">soupe</span>
+                                        </a>
+                                    </li>
+                                    <li class="hamburger__li">
+                                        <a href="" class="hamburger__a" data-type="pizza">
+                                        <span class="hamburger__text">pizza</span>
+                                        </a>
+                                    </li>
+                                    <li class="hamburger__li">
+                                        <a href="" class="hamburger__a" data-type="pasta">
+                                            <span class="hamburger__text">pasta</span>
+                                        </a>
+                                    </li>
+                                    <li class="hamburger__li">
+                                        <a href="" class="hamburger__a" data-type="desert">
+                                            <span class="hamburger__text">desert</span>
+                                        </a>
+                                    </li>
+                                    <li class="hamburger__li">
+                                        <a href="" class="hamburger__a" data-type="wine">
+                                            <span class="hamburger__text">wine</span>
+                                        </a>
+                                    </li>
+                                    <li class="hamburger__li">
+                                        <a href="" class="hamburger__a" data-type="beer">
+                                            <span class="hamburger__text">beer</span>
+                                        </a>
+                                    </li>
+                                    <li class="hamburger__li">
+                                        <a href="" class="hamburger__a" data-type="drinks">
+                                            <span class="hamburger__text">drinks</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <ul class="section-menu__ul">
                             <li class="section-menu__li">
-                                <span class="section-menu__span">soupe</span>
+                                <span class="section-menu__span active" data-type="soupe">soupe</span>
                             </li>
                             <li class="section-menu__li">
-                                <span class="section-menu__span">pizza</span>
+                                <span class="section-menu__span" data-type="pizza">pizza</span>
                             </li>
                             <li class="section-menu__li">
-                                <span class="section-menu__span">pasta</span>
+                                <span class="section-menu__span" data-type="pasta">pasta</span>
                             </li>
                             <li class="section-menu__li">
-                                <span class="section-menu__span">desert</span>
+                                <span class="section-menu__span" data-type="desert">desert</span>
                             </li>
                             <li class="section-menu__li">
-                                <span class="section-menu__span">wine</span>
+                                <span class="section-menu__span" data-type="wine">wine</span>
                             </li>
                             <li class="section-menu__li">
-                                <span class="section-menu__span">beer</span>
+                                <span class="section-menu__span" data-type="beer">beer</span>
                             </li>
                             <li class="section-menu__li">
-                                <span class="section-menu__span">drinks</span>
+                                <span class="section-menu__span" data-type="drinks">drinks</span>
                             </li>
                         </ul>
                     </nav>
                     <div class="section-menu__table">
                         <!--soupe-->
-                        <div class="section-menu__soupe">
+                        <div class="section-menu__soupe menu-box">
                             <div class="menu__block">
                                 <p class="menu__string">
                                     <span class="menu__name">pizza quatro stagioni</span>
@@ -532,6 +590,771 @@
                             </div>
                         </div>
                         <!--/soupe-->
+
+                        <!--pizza-->
+                        <div class="section-menu__pizza menu-box">
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                        </div>
+                        <!--/pizza-->
+
+                        <!--pasta-->
+                        <div class="section-menu__pasta menu-box">
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                        </div>
+                        <!--/pasta-->
+
+                        <!--desert-->
+                        <div class="section-menu__desert menu-box">
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                        </div>
+                        <!--/desert-->
+
+                        <!--wine-->
+                        <div class="section-menu__wine menu-box">
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                        </div>
+                        <!--/wine-->
+
+                        <!--beer-->
+                        <div class="section-menu__beer menu-box">
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                        </div>
+                        <!--/beer-->
+
+                        <!--drinks-->
+                        <div class="section-menu__drinks menu-box">
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="menu__block">
+                                <p class="menu__string">
+                                    <span class="menu__name">pizza quatro stagioni</span>
+                                    <span class="menu__price">55,68 usd</span>
+                                </p>
+                                <p class="menu__substring">Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                        </div>
+                        <!--/drinks-->
                     </div>
                 </div>
             </div>
@@ -675,11 +1498,12 @@
     </button>
     <!--/scrollTopBtn-->
     
-    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/header.js"></script>
     <script src="js/btns.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/hamburger.js"></script>
 </body>
 
 </html>
