@@ -534,8 +534,8 @@
         }
 
         .slider__btn {
-            min-width: 15px;
-            min-height: 15px;
+            width: 15px;
+            height: 15px;
             background: #ffffff80;
             border: none;
             border-radius: 50%;
