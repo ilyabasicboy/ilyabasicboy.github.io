@@ -640,10 +640,6 @@
                 max-width: 300px;
             }
         }
-        @media (max-width:992px) {
-            .menu__block {
-            }
-        }
         /*/menu*/
         
         .contact__a {
@@ -651,7 +647,7 @@
             text-decoration: none;
         }
 
-        /*fadeIn-fadeOut*/
+        /*animation*/
         .fadeIn {
             animation: fadeIn .5s linear forwards;
         }
