@@ -235,7 +235,7 @@
             display: block;
             text-align: center;
             transition: background .3s;
-            width: 50%;
+            width: 30%;
             margin: auto;
         }
         .hamburger__a:hover {
